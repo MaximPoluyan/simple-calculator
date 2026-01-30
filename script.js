@@ -34,4 +34,4 @@ btnDivide.onclick = function() {
         result.textContent = "Результат: " + divide;
         result.style.color = "black"; //вернуть исходный цвет
     }
-};
+};  

@@ -23,6 +23,15 @@ btnMultiply.onclick = function() {
 };
 
 btnDivide.onclick = function() {
-    const divide = Number(num1.value) / Number(num2.value);
-    result.textContent = "Результат: " + divide;
+    const num2val = Number(num2.value);
+    if (num2val === 0) {
+        result.style.color = "red"; 
+        result.textContent = "на ноль делить нельзя!";
+    } 
+    else 
+        {
+        const divide = Number(num1.value) / num2val;
+        result.textContent = "Результат: " + divide;
+        result.style.color = "black"; //вернуть исходный цвет
+    }
 };

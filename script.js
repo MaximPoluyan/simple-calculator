@@ -11,3 +11,18 @@ btnPlus.onclick = function() {
     const sum = Number(num1.value) + Number(num2.value);
     result.textContent = "Результат: " + sum;
 };
+
+btnMinus.onclick = function() {
+    const minus = Number(num1.value) - Number(num2.value);
+    result.textContent = "Результат: " + minus;
+};
+
+btnMultiply.onclick = function() {
+    const multiply = Number(num1.value) * Number(num2.value);
+    result.textContent = "Результат: " + multiply;
+};
+
+btnDivide.onclick = function() {
+    const divide = Number(num1.value) / Number(num2.value);
+    result.textContent = "Результат: " + divide;
+};
